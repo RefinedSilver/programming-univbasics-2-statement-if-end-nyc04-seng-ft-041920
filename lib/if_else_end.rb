@@ -33,7 +33,10 @@ puts "You know what year it is??"
 this_year = 2020
 puts "Hey, it's 2020!" if this_year == 2020
 
-if Time.now.second % 2 == 0
+current_time = Time.now
+current_time = current_time.to_i
+
+if current_time % 2 == 0
   puts "Even!"
 else
   puts "Odd!"
